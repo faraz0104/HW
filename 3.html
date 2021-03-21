@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Event Delegation</title>
+</head>
+<body>
+	<div class = "button">
+		<button id= "btn1">click</button>
+        
+        <<button id = "btn2">click</button>
+   
+
+	</div>
+
+	<script>
+		
+document.getElementsByClassName("button").addEventListener('click', event =>  {
+
+	if (event.target.id === "btn")
+{
+
+documnt.write("click  the event delegation is happened");
+
+}
+
+else
+{
+
+	document.write("the event delegation is not happened");
+}
+
+})
+
+
+
+
+	</script>
+</body>
+</html>
