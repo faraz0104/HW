@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Add two number using callback</title>
+</head>
+<body>
+	<script>
+
+addNumber = function(a , b , callback) {
+        
+        var sum = callback(a  +  b);
+
+
+        return sum;
+
+	// body... 
+		}
+
+		var add = function(a , b){
+			return a + b;
+		}
+		
+
+document.write(addNumber(2 , 3 ,add));
+
+	</script>
+
+
+
+	
+
+</body>
+</html>
