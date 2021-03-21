@@ -1,0 +1,72 @@
+ 
+ <!DOCTYPE html>
+ <html>
+ <head>
+ 	<title>event delegation</title>
+
+<style>
+	
+div {
+
+min-height: 100px;
+min-width:  100px;
+padding: 30px;
+border: 1px solid black;
+
+
+}
+
+
+
+
+</style>
+
+
+ </head>
+ <body>
+
+ 	<div id ="grandparent">
+ 		<div id ="parent">
+ 			<div id ="child"></div>
+ 			
+ 		</div>
+ 		
+ 	</div>
+    <script>
+    	
+document.querySelector("#grandparent")
+.addEventListener('click', () => {
+
+document.write("grandparent clicked");
+
+
+});
+
+
+document.querySelector("#parent")
+.addEventListener('click', (e) => {
+
+document.write("parent clicked");
+e.stopPropagation();
+
+});
+
+
+document.querySelector("#child")
+.addEventListener('click', () => {
+
+document.write("child clicked");
+
+
+});
+
+
+
+
+
+    </script>
+   
+
+ 
+ </body>
+ </html>
