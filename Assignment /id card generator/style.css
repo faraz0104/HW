@@ -1,0 +1,65 @@
+
+ 
+
+h2 {
+    color: cyan;
+    background-color: black;
+    padding: 4px;
+    border-radius: 6px;
+}
+
+
+form {
+    display: table;
+}
+
+
+
+input {
+    display: table;
+    margin-bottom: 20px;
+}
+
+body {
+    font: 20px Helvetica, Arial;
+    margin: 0;
+    padding: 0;
+}
+
+#icard {
+    width: auto;
+    float: left;
+    border: 1px solid blue;
+    margin: auto;
+    padding: 200px
+    border-radius: 20px;
+    background-color: #92a8d1;
+}
+
+.container {
+    border: 1px solid red;
+    display: table;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+form span {
+    font-size: 12px;
+}
+
+#preview {
+    font-size: 16px;
+    margin-top: 2em;
+    margin-left: 2em;
+    margin-bottom: 2em;
+    
+}
+
+header {
+    width: 100%;
+   background-color: #92a8d1;
+    border-radius: 20px;
+    padding: 1px;
+    color: black;
+}
+

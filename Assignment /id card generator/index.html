@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ID Card Generator</title>
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    
+    <div id  = "icard">
+
+    	 <h2>Enter Student Detail</h2>
+
+    	 <form>
+
+    	 <label> Full Name</label>	
+    	 <input type="text" name="" id="fullname"  placeholder="Enter Full Name">
+
+
+    	 <label>College Name</label>
+    	 <input type="text" name="" id="collegename"  placeholder="Enter College Name">
+
+
+    	  <label>Address</label>
+          <input type="message" id="address" placeholder="Enter Address Here">
+
+
+        
+          <label for="file" class="file"> Upload an Image</label>
+       <br>
+        <input type="file" id="file" accept="image/*" onchange="loadImage(event)">
+
+          <span>choose your recent photo</span>
+
+
+         </form>
+
+         <button type="submit" id="preview" onclick="prev()">Preview</button>
+    	
+        </div>
+
+
+     <div   class = "container">
+
+         <div class = "card"  id = "result"></div> 
+
+         <header id="head">
+         <div class="camp">
+         <h4>GGSIPU</h4>
+         <span>Automobile Student </span>
+               
+     </div>
+
+
+       </div> 
+
+     </header> 
+
+      <img src="" alt="" id="imgDisplayed">
+        <div id="ul">
+            <ul>
+                <li id="name"></li>
+                <li id="college"></li>
+                <li id="addres"></li>
+            </ul>
+        </div>
+
+
+        <script src ="i.js"></script>
+
+
+
+
+</body>
+</html>
